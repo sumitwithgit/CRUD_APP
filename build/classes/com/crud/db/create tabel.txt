@@ -1,0 +1,12 @@
+create database crud;
+use crud;
+
+
+CREATE TABLE student (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(200) NOT NULL,
+  email varchar(500) NOT NULL,
+  mobile int NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY email (email)
+)
